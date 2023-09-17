@@ -32,12 +32,16 @@ body {
 	right: 0;
 }
 
+.content {
+    padding: 5px;
+}
+
 .content__text {
 	margin-top: 20px;
 	display: flex;
     font-size: 20px;
     font-weight: normal;
-
+    color: #fff;
 }
 
 .bar {
@@ -100,4 +104,19 @@ input[name="r"] {
 
 #r4:checked~.s1 {
 	margin-left: -75%;
+}
+
+@media (max-width: 500px) {
+    .navigation {
+        justify-content: center;
+    }
+
+    .slide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        color: #fff;
+    }
 }
